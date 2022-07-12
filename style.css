@@ -23,7 +23,6 @@ nav {
 }
 
 .brand {
-    color: rgb(254, 210, 0);
     font-size: 30px;
     cursor: pointer;
     height: 100%;
@@ -31,6 +30,11 @@ nav {
     line-height: 40px;
     transition: 0.5s;
     font-weight: 800;
+}
+
+.brand a {
+    text-decoration: none;
+    color: rgb(254, 210, 0);
 }
 
 .container::before {
@@ -61,7 +65,7 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 25px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -69,6 +73,7 @@ a.active,
 a:hover {
     color: rgb(254, 210, 0);
     transition: 0.5s;
+    font-weight: 900;
 }
 
 .bars {
@@ -99,12 +104,13 @@ a:hover {
 
 .slick-next {
     position: absolute;
-    right: 75%;
+    right: 73%;
     background-color: #020202;
     border: none;
     color: transparent;
     width: 40px;
     height: 40px;
+    top: 97%;
     border-radius: 40px;
 }
 
@@ -117,6 +123,8 @@ a:hover {
 
 .slick-prev {
     left: 19.5%;
+    top: 97%;
+
 }
 
 .slick-prev:before {
@@ -133,6 +141,7 @@ a:hover {
     float: left;
     width: 40%;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .color {
@@ -303,7 +312,7 @@ a:hover {
         padding-top: 150px;
     }
 
-    body .slick-prev {
+    .slick-prev {
         left: 18%;
     }
 
@@ -326,13 +335,13 @@ a:hover {
     }
 
     nav ul {
-        background: rgb(153 206 236 / 93%);
+        background: rgb(97 124 140 / 93%);
         color: #fff;
         position: fixed;
         left: 100%;
         top: 70px;
         width: 50%;
-        height: 80vh;
+        height: 85vh;
         text-align: center;
         transition: all 0.5s;
         z-index: 1;
@@ -349,7 +358,7 @@ a:hover {
     }
 
     nav ul li a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     a.active,
@@ -376,6 +385,10 @@ a:hover {
         padding-top: 0;
     }
 
+    .slick-next {
+        right: 70%;
+    }
+
     .column2 img {
         width: 300px;
         align-items: center;
@@ -400,7 +413,6 @@ a:hover {
     }
 
     .brand {
-        font-size: 16px;
         padding-left: 20px;
     }
 
@@ -449,6 +461,10 @@ a:hover {
     #chk:checked~ul {
         left: 30%;
     }
+
+    .slick-next {
+        right: 65%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -458,6 +474,10 @@ a:hover {
 
     #chk:checked~ul {
         left: 20%;
+    }
+
+    .slick-next {
+        right: 62%;
     }
 }
 
@@ -493,6 +513,10 @@ a:hover {
         padding: 8px 14px;
     }
 
+    .slick-next {
+        right: 59%;
+    }
+
     .ourservices {
         text-align: center;
         padding-top: 71px;
@@ -504,7 +528,7 @@ a:hover {
 
     #top-services {
         font-weight: 800;
-        font-size: 15px;
+        font-size: 20px;
         padding-bottom: 10px;
     }
 
