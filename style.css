@@ -9,19 +9,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.container {
-    padding-top: 60px;
-}
-
-nav {
-    background: rgb(225, 243, 253);
-    height: 50px;
-    width: 100%;
-    padding: 15px 0;
-    position: fixed;
-    z-index: 1;
-}
-
+/* BRAND - SECTION 1 */
 .brand {
     font-size: 30px;
     cursor: pointer;
@@ -37,16 +25,29 @@ nav {
     color: rgb(254, 210, 0);
 }
 
-.container::before {
-    content: "";
-    display: table;
-    clear: both;
+/* BARS - SECTION 1 */
+.bars {
+    font-size: 20px;
+    color: #000;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
+#chk {
+    display: none;
+}
+
+/* NAVBAR - SECTION 1 */
+nav {
+    background: rgb(225, 243, 253);
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -76,18 +77,22 @@ a:hover {
     font-weight: 900;
 }
 
-.bars {
-    font-size: 20px;
-    color: #000;
-    float: right;
-    line-height: 50px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+
+/* SLEEK SLIDER - SECTION 2 */
+.container {
+    padding-top: 60px;
 }
 
-#chk {
-    display: none;
+.container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .slick-prev {
@@ -99,7 +104,8 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-
+    left: 19.5%;
+    top: 97%;
 }
 
 .slick-next {
@@ -121,31 +127,23 @@ a:hover {
     font-size: 30px;
 }
 
-.slick-prev {
-    left: 19.5%;
-    top: 97%;
-
-}
-
 .slick-prev:before {
     content: "<~ ";
 }
 
-.column {
-    float: left;
-    width: 40%;
-    padding-left: 20%;
-}
-
-.column2 {
-    float: left;
-    width: 40%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+.slide-content {
+    padding-top: 80px;
 }
 
 .color {
     background: rgb(225, 243, 253);
+}
+
+/* SLEEK COLUMN LEFT - SECTION 2 */
+.sleek-columnleft {
+    float: left;
+    width: 40%;
+    padding-left: 20%;
 }
 
 .top-heading {
@@ -154,7 +152,7 @@ a:hover {
     font-weight: bold;
 }
 
-.heading {
+.sub-heading {
     font-size: 70px;
     font-weight: 700;
     margin-top: 10px;
@@ -172,10 +170,6 @@ a:hover {
     padding-bottom: 40px;
 }
 
-.slide-content {
-    padding-top: 80px;
-}
-
 .button1 {
     padding: 20px 50px;
     font-weight: bold;
@@ -184,7 +178,6 @@ a:hover {
     background-color: white;
     border: none;
     cursor: pointer;
-
 }
 
 .button2 {
@@ -195,30 +188,39 @@ a:hover {
     color: white;
     border: none;
     cursor: pointer;
-
 }
 
-.uni-padding {
-    padding: 0 7%;
+/* SLEEK COLUMN RIGHT - SECTION 2 */
+.sleek-columnright {
+    float: left;
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-/* OUR SERVICES */
+
+
+/* OUR SERVICES - SECTION 3*/
 .ourservices {
     text-align: center;
     padding-top: 130px;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
-#top-services {
+#services-heading {
     font-weight: 700;
     padding-bottom: 15px;
     font-size: 40px;
 }
 
-#bottom-services {
+#services-subheading {
     font-size: 15px;
 }
 
-/* 3rd part */
+
+
+/* CARDS - SECTION 4 */
 .row {
     margin: 0;
     padding: 80px 240px;
@@ -249,36 +251,13 @@ a:hover {
     padding-bottom: 50px;
 }
 
-.cardbutton {
-    background-color: rgb(254, 210, 0);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    margin: auto;
-    width: 50%;
-}
-
-.both:hover .cardbutton {
-    background-color: rgb(225, 243, 253);
-    color: #000;
+.card p {
+    font-size: 17px;
 }
 
 .both:hover .card {
     border-bottom: 9px solid rgb(225, 243, 253);
     box-shadow: 0 12px 30px 0 rgb(205, 204, 204);
-}
-
-.card .cardbottom p {
-    font-size: 15px;
-}
-
-.card p {
-    font-size: 17px;
-}
-
-.yellow {
-    color: rgb(254, 210, 0);
 }
 
 .top {
@@ -289,24 +268,80 @@ a:hover {
     font-stretch: expanded;
 }
 
+.yellow {
+    color: rgb(254, 210, 0);
+}
+
+.card .cardbottom p {
+    font-size: 15px;
+}
+
 .cardbutton {
+    background-color: rgb(254, 210, 0);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
     margin: 10% 25%;
 }
 
+.both:hover .cardbutton {
+    background-color: rgb(225, 243, 253);
+    color: #000;
+}
+
+/* MEDIA SCREEN ( 1024px ) */
 @media screen and (max-width: 1024px) {
-    .column {
-        /* width: 100; */
+    .bars {
+        display: block;
+    }
+
+    #chk:checked~ul {
+        left: 50%;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        background: rgb(97 124 140 / 93%);
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        width: 50%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    a.active,
+    a:hover {
+        background: none;
+        color: rgb(254, 210, 0);
+    }
+
+    .sleek-columnleft {
         padding-left: 15%;
     }
 
-    .column2 {
-        /* width: 100%; */
+    .sleek-columnright {
         justify-content: center;
         display: flex;
         padding-top: 0;
     }
 
-    .column2 img {
+    .sleek-columnright img {
         width: 400px;
         align-items: center;
         padding-top: 150px;
@@ -320,65 +355,26 @@ a:hover {
         padding-top: 0;
     }
 
-    .cardcolumn {
-        width: 100%;
-        padding: 0;
-    }
-
     .ourservices {
         text-align: center;
         padding-top: 80px;
     }
 
-    nav {
-        padding: 10px 0;
+    .cardcolumn {
+        width: 100%;
+        padding: 0;
     }
 
-    nav ul {
-        background: rgb(97 124 140 / 93%);
-        color: #fff;
-        position: fixed;
-        left: 100%;
-        top: 70px;
-        width: 50%;
-        height: 85vh;
-        text-align: center;
-        transition: all 0.5s;
-        z-index: 1;
-    }
 
-    nav ul li {
-        display: block;
-        margin: 50px;
-        line-height: 10px;
-    }
-
-    .bars {
-        display: block;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    a.active,
-    a:hover {
-        background: none;
-        color: rgb(254, 210, 0);
-    }
-
-    #chk:checked~ul {
-        left: 50%;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .column {
+    .sleek-columnleft {
         width: 100%;
         padding: 0 15px;
     }
 
-    .column2 {
+    .sleek-columnright {
         width: 100%;
         justify-content: center;
         display: flex;
@@ -389,7 +385,7 @@ a:hover {
         right: 70%;
     }
 
-    .column2 img {
+    .sleek-columnright img {
         width: 300px;
         align-items: center;
         padding-top: 0;
@@ -403,7 +399,7 @@ a:hover {
         font-size: 15px;
     }
 
-    .heading {
+    .sub-heading {
         font-size: 45px;
         margin-bottom: 10px;
     }
@@ -443,7 +439,7 @@ a:hover {
         padding: 80px;
     }
 
-    #top-services {
+    #services-heading {
         font-weight: 700;
         font-size: 30px;
     }
@@ -489,7 +485,7 @@ a:hover {
         margin: 10px 0;
     }
 
-    .heading {
+    .sub-heading {
         font-size: 35px;
         margin-bottom: 2px;
         margin-top: 0;
@@ -500,7 +496,7 @@ a:hover {
         line-height: 1.2em;
     }
 
-    .column2 img {
+    .sleek-columnright img {
         width: 200px;
         align-items: center;
     }
@@ -526,7 +522,7 @@ a:hover {
         padding: 50px;
     }
 
-    #top-services {
+    #services-heading {
         font-weight: 800;
         font-size: 20px;
         padding-bottom: 10px;
