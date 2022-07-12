@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+nav {
+    background: rgb(225, 243, 253);
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.brand {
+    color: rgb(254, 210, 0);
+    font-size: 30px;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 44px;
+    line-height: 40px;
+    transition: 0.5s;
+    font-weight: 800;
+}
+
+.container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    float: right;
+    padding-right: 5px;
+}
+
+nav ul li {
+    display: contents;
+    line-height: 50px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+a.active,
+a:hover {
+    color: rgb(254, 210, 0);
+    transition: 0.5s;
+}
+
+.bars {
+    font-size: 20px;
+    color: #000;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#chk {
+    display: none;
+}
+
+.slick-prev {
+    position: absolute;
+    right: 75%;
+    background-color: #fed200;
+    border: none;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+}
+
+.slick-next {
+    position: absolute;
+    right: 75%;
+    background-color: #020202;
+    border: none;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: " ~>";
+    color: #fff;
+    font-size: 30px;
+}
+
+.slick-prev {
+    left: 19.5%;
+}
+
+.slick-prev:before {
+    content: "<~ ";
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding-left: 20%;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+    padding-top: 50px;
+}
+
+.color {
+    background: rgb(225, 243, 253);
+}
+
+.top-heading {
+    padding-top: 96px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    font-size: 14.5px;
+    line-height: 1.8em;
+    padding-right: 8%;
+    padding-bottom: 8%;
+}
+
+.main-button {
+    padding-bottom: 40px;
+}
+
+.slide-content {
+    padding-top: 80px;
+}
+
+.button1 {
+    padding: 20px 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button2 {
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fed200;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.uni-padding {
+    padding: 0 7%;
+}
+
+/* OUR SERVICES */
+.ourservices {
+    text-align: center;
+    padding-top: 130px;
+}
+
+#top-services {
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+#bottom-services {
+    font-size: 15px;
+}
+
+/* 3rd part */
+.row {
+    margin: 0;
+    padding: 80px 240px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cardcolumn {
+    float: left;
+    width: 31%;
+    padding: 10px;
+}
+
+.both {
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+
+.card {
+    box-shadow: 0 6px 15px 0 rgb(205, 204, 204);
+    padding: 16px 16px 50px 20px;
+    border-bottom: 9px solid rgb(254, 210, 0);
+    border-radius: 9px;
+    padding-bottom: 50px;
+}
+
+.cardbutton {
+    background-color: rgb(254, 210, 0);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.both:hover .cardbutton {
+    background-color: rgb(225, 243, 253);
+    color: #000;
+}
+
+.both:hover .card {
+    border-bottom: 9px solid rgb(225, 243, 253);
+    box-shadow: 0 12px 30px 0 rgb(205, 204, 204);
+}
+
+.card .cardbottom p {
+    font-size: 15px;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+.yellow {
+    color: rgb(254, 210, 0);
+}
+
+.top {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-stretch: expanded;
+}
+
+.cardbutton {
+    margin: 10% 25%;
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+        /* width: 100; */
+        padding-left: 15%;
+    }
+
+    .column2 {
+        /* width: 100%; */
+        justify-content: center;
+        display: flex;
+        padding-top: 0;
+    }
+
+    .column2 img {
+        width: 400px;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    body .slick-prev {
+        left: 18%;
+    }
+
+    .slide-content {
+        padding-top: 0;
+    }
+
+    .cardcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .ourservices {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        background: rgb(153 206 236 / 93%);
+        color: #fff;
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        width: 50%;
+        height: 80vh;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 10px;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    a.active,
+    a:hover {
+        background: none;
+        color: rgb(254, 210, 0);
+    }
+
+    #chk:checked~ul {
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .column2 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding-top: 0;
+    }
+
+    .column2 img {
+        width: 300px;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .paragraph {
+        padding-bottom: 2%;
+    }
+
+    .top-heading {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .slide-content {
+        padding-top: 0;
+    }
+
+    .brand {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    nav ul {
+        width: 60%;
+    }
+
+    #chk:checked~ul {
+        left: 40%;
+    }
+
+    .top-heading {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .button1 {
+        padding: 10px 25px;
+    }
+
+    .button2 {
+        padding: 10px 25px;
+    }
+
+    .row {
+        padding: 80px;
+    }
+
+    #top-services {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .fa-3x {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav ul {
+        width: 70%;
+    }
+
+    #chk:checked~ul {
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav ul {
+        width: 80%;
+    }
+
+    #chk:checked~ul {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .top-heading {
+        padding-top: 4px;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .heading {
+        font-size: 35px;
+        margin-bottom: 2px;
+        margin-top: 0;
+    }
+
+    .paragraph {
+        font-size: 12px;
+        line-height: 1.2em;
+    }
+
+    .column2 img {
+        width: 200px;
+        align-items: center;
+    }
+
+    .button1 {
+        padding: 8px 14px;
+    }
+
+    .button2 {
+        padding: 8px 14px;
+    }
+
+    .ourservices {
+        text-align: center;
+        padding-top: 71px;
+    }
+
+    .row {
+        padding: 50px;
+    }
+
+    #top-services {
+        font-weight: 800;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .card {
+        padding: 16px 4px 24px 10px;
+    }
+
+    .top {
+        font-size: 10px;
+        font-weight: 800;
+        padding-bottom: 0;
+    }
+
+    .card .cardbottom p {
+        font-size: 12px;
+    }
+
+    .fa-3x {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    #chk:checked~ul {
+        left: 0%;
+    }
+}
