@@ -294,7 +294,7 @@ a:hover {
 
 /* ABOUT COMPANY - SECTION 5 */
 .about {
-    padding: 150px 300px 400px 240px;
+    padding: 150px 300px 400px 300px;
     background-color: rgb(225, 243, 253);
 }
 
@@ -333,6 +333,10 @@ a:hover {
     float: right;
     width: 40%;
 }
+
+/* .companyright img {
+    width: 100%;
+} */
 
 .companyright::before {
     content: "";
@@ -414,7 +418,9 @@ a:hover {
         padding: 0;
     }
 
-
+    .about {
+        padding-left: 150px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -496,6 +502,16 @@ a:hover {
     .fa-3x {
         font-size: 2rem;
     }
+
+    .about {
+        padding: 150px 10px 400px 50px;
+    }
+
+    .companyright img {
+        width: 100%;
+        padding-top: 60px;
+        /* padding-left: 50px */
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -510,6 +526,40 @@ a:hover {
     .slick-next {
         right: 65%;
     }
+
+    .companyright {
+        /* float: right; */
+        width: 100%;
+    }
+
+    .companyleft {
+        /* float: left; */
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px 10px 500px 10px;
+    }
+
+    .aboutcompany {
+        font-size: 25px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .about-paragraph {
+        text-align: center;
+    }
+
+    .aboutbutton {
+        margin: 10px 140px;
+    }
+
+    .companyright img {
+        width: 75%;
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -523,6 +573,11 @@ a:hover {
 
     .slick-next {
         right: 62%;
+    }
+
+    .companyright img {
+        width: 75%;
+        padding: 0 50px;
     }
 }
 
@@ -568,7 +623,7 @@ a:hover {
     }
 
     .row {
-        padding: 50px;
+        padding: 0px 30px;
     }
 
     #services-heading {
@@ -601,5 +656,13 @@ a:hover {
 
     #chk:checked~ul {
         left: 0%;
+    }
+
+    .about {
+        padding-bottom: 400px;
+    }
+
+    .aboutbutton {
+        margin: 10px 90px;
     }
 }
