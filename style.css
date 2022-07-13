@@ -74,7 +74,6 @@ a.active,
 a:hover {
     color: rgb(254, 210, 0);
     transition: 0.5s;
-    font-weight: 900;
 }
 
 
@@ -344,7 +343,7 @@ a:hover {
 .rowabout {
     margin-left: 250px;
     margin-right: 140px;
-    padding: 57px 0;
+    padding: 75px 0;
     text-align: center;
 }
 
@@ -376,6 +375,116 @@ a:hover {
     font-size: 10px;
     color: rgb(254, 210, 0);
     text-align: center;
+}
+
+/* FORMS - SECTION 9 */
+.formsservices {
+    text-align: center;
+    padding-top: 50pxpx;
+    align-items: center;
+    /* text-decoration: underline;
+    -webkit-text-decoration-color: rgb(254, 210, 0); */
+    text-decoration-color: rgb(254, 210, 0);
+}
+
+.formsservices p {
+    border-left: 10%;
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+.formsservices p strong {
+    border-bottom: 1px solid rgb(254, 210, 0);
+}
+
+.forms {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.forms1 {
+    width: 25%;
+    border-radius: 10px;
+    border-color: rgb(225, 243, 253);
+    padding: 10px;
+    border-style: solid;
+}
+
+.formswidth {
+    height: 25px;
+}
+
+.formssend {
+    background-color: rgb(254, 210, 0);
+    border: 1px;
+    color: rgb(255, 255, 255);
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px 2px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.message {
+    height: 100px;
+}
+
+/* FOOTER - SECTION 10 */
+.footer {
+    padding: 40px 350px 400px 300px;
+    background-color: rgb(47, 47, 49);
+}
+
+.footerleft {
+    float: left;
+    width: 50%;
+}
+
+.footerright {
+    float: right;
+    width: 50%;
+}
+
+.footer input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.footer .footerleft button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer .footerleft button:hover {
+    background: #ccc;
+}
+
+.footer .footerleft p {
+    color: white;
+}
+
+.footerleft1 {
+    float: left;
+    width: 85%;
+}
+
+/* COPYWRITE - SECTION 11 */
+.copyright {
+    background-color: rgb(225, 243, 253);
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: black;
+    padding: 10px;
 }
 
 /* MEDIA SCREEN ( 1024px ) */
@@ -459,6 +568,24 @@ a:hover {
     .rowabout {
         margin-left: 140px;
     }
+
+    .footerright {
+        width: 40%;
+    }
+
+    .footerleft {
+        width: 60%;
+    }
+
+    .footer {
+        padding-bottom: 400px;
+        padding-left: 150px;
+        background-color: rgb(47, 47, 49);
+    }
+
+    .footerright img {
+        width: 250%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -534,7 +661,7 @@ a:hover {
 
     #services-heading {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .fa-3x {
@@ -565,15 +692,40 @@ a:hover {
     .rowabout {
         margin-left: 120px;
     }
+
+    .footerright {
+        width: 100%;
+    }
+
+    .footerright img {
+        width: 100%;
+        padding: 0 70px;
+    }
+
+    .footerleft {
+        width: 100%;
+        padding-bottom: 30px;
+        padding-left: 60px;
+    }
+
+    .footerleft1 {
+        width: 100%;
+    }
+
+    .footer {
+        padding-right: 150px;
+        padding-left: 20px;
+        padding-bottom: 600px;
+    }
 }
 
 @media screen and (max-width: 425px) {
     nav ul {
-        width: 70%;
+        width: 100%;
     }
 
     #chk:checked~ul {
-        left: 30%;
+        left: 0;
     }
 
     .slick-next {
@@ -595,7 +747,7 @@ a:hover {
     }
 
     .aboutcompany {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
         padding-bottom: 10px;
         text-align: center;
@@ -622,15 +774,27 @@ a:hover {
         /* width: 80%; */
         height: 150px;
     }
+
+    .forms1 {
+        width: 50%;
+    }
+
+    .formsservices p {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding-bottom: 500px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     nav ul {
-        width: 80%;
+        width: 100%;
     }
 
     #chk:checked~ul {
-        left: 20%;
+        left: 0;
     }
 
     .slick-next {
@@ -740,5 +904,22 @@ a:hover {
 
     .columnabout {
         width: 100%;
+    }
+
+    .footerleft {
+        width: 100%;
+        padding-left: 19px;
+    }
+
+    .footer {
+        padding-right: 100px;
+    }
+
+    .footerright img {
+        padding: 0 40px;
+    }
+
+    .copyright {
+        font-size: 8px;
     }
 }
